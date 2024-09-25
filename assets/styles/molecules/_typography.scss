@@ -1,0 +1,47 @@
+﻿@use "../atoms/colors";
+
+html {
+  color: colors.$foregroundPrimary;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+
+  h1, h2, h3, .label {
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  p, a {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  a, .important {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .subtext {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  ::selection{
+    background: colors.$foregroundAccent;
+    color: colors.$background0;
+  }
+}

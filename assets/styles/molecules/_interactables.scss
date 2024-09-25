@@ -1,0 +1,71 @@
+﻿@use "../atoms/colors";
+
+a {
+  align-items: center;
+  border-radius: 8px;
+  color: colors.$foregroundPrimary;
+  display: flex;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-decoration: none;
+  width: 100%;
+
+  &.primary {
+    animation: idlePulse 2s infinite ease-in-out;
+    background: colors.$foregroundAccent;
+    color: colors.$background0;
+  }
+
+  &.secondary {
+    border: 1px solid colors.$foregroundPrimary;
+  }
+
+  &.icon {
+    border: 1px solid colors.$foregroundPrimary;
+    height: 48px;
+    padding: 4px;
+    width: 48px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    color: colors.$foregroundAccent;
+    cursor: pointer;
+
+    &.primary {
+      animation-play-state: paused;
+      background: colors.$foregroundPrimary;
+      color: colors.$background0;
+    }
+
+    &.secondary {
+      border: 1px solid colors.$foregroundAccent;
+    }
+
+    &.icon {
+      border: 1px solid colors.$foregroundAccent;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @keyframes idlePulse {
+    0%, 100% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,136 @@
+a {
+  align-items: center;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-decoration: none;
+  width: 100%;
+}
+a.primary {
+  animation: idlePulse 2s infinite ease-in-out;
+  background: #ffaa00;
+  color: #000000;
+}
+a.secondary {
+  border: 1px solid #ffffff;
+}
+a.icon {
+  border: 1px solid #ffffff;
+  height: 48px;
+  padding: 4px;
+  width: 48px;
+}
+a.icon img {
+  height: 100%;
+  width: 100%;
+}
+a:hover {
+  color: #ffaa00;
+  cursor: pointer;
+}
+a:hover.primary {
+  animation-play-state: paused;
+  background: #ffffff;
+  color: #000000;
+}
+a:hover.secondary {
+  border: 1px solid #ffaa00;
+}
+a:hover.icon {
+  border: 1px solid #ffaa00;
+}
+a:active {
+  opacity: 0.6;
+}
+@keyframes idlePulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+html {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+html h1, html h2, html h3, html .label {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+}
+html h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+html h2 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+html h3 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+html p, html a {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+html a, html .important {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+html .subtext {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+html ::selection {
+  background: #ffaa00;
+  color: #000000;
+}
+
+* {
+  animation: linear;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("../images/pattern.svg");
+  height: 100%;
+}
+html body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 100%;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 512px;
+  padding-inline: 32px;
+  text-align: center;
+}
+html body header {
+  max-width: 256px;
+}
+html body header h1 :first-child {
+  color: #ffaa00;
+}
+html body .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/*# sourceMappingURL=styles.css.map */
